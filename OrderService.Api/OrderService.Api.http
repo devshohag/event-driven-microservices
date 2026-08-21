@@ -1,0 +1,20 @@
+@OrderService_HostAddress = http://localhost:5001
+
+GET {{OrderService_HostAddress}}/api/orders
+Accept: application/json
+
+###
+
+POST {{OrderService_HostAddress}}/api/orders
+Content-Type: application/json
+
+{
+  "customerName": "Jane Doe"
+}
+
+###
+
+GET {{OrderService_HostAddress}}/api/orders/1
+Accept: application/json
+
+###

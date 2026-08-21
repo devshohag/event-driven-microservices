@@ -1,0 +1,10 @@
+@SearchService_HostAddress = http://localhost:5004
+
+POST {{SearchService_HostAddress}}/graphql
+Content-Type: application/json
+
+{
+  "query": "query { products(term: \"mouse\") { id name quantityAvailable } }"
+}
+
+###
